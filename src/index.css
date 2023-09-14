@@ -1,13 +1,147 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: maven;
+  src: url(/src/assets/Maven_Pro/static/MavenPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: maven-thin;
+  src: url(/src/assets/Maven_Pro/static/MavenPro-Regular.ttf);
+}
+
+::-webkit-scrollbar{
+  display: none;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --one: hsl(170,250,250)
+}
+
+body {
+  /* background-image: url("/src/assets/hivebg.png");
+  background-size:contain;
+  background-repeat: repeat-y; */
+  background-image: radial-gradient(hsl(160, 50%, 20%), hsl(180, 10%, 17%));
+  font-family: maven-thin;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgb(228, 228, 228);
+}
+
+
+.Navbar{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-height: 10vh;
+}
+
+.Navbar-options{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 50%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-weight: bolder;
+}
+
+
+
+.Hero{
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+a{
+  all: unset;
+  cursor: pointer;
+  width: fit-content;
+}
+
+a:hover{
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 10px black;
+}
+
+h1{
+  font-size: 75pt;
+  font-family: maven;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  text-shadow: 0 0 5px black;
+}
+
+h2{
+  color: rgb(157, 157, 157);
+  font-family: maven-thin;
+  font-weight: lighter;
+}
+
+.Project{
+  background-color: rgba(45, 45, 45, 0);
+  color: rgb(184, 184, 184);
+  margin: 1em;
+  padding: 2em;
+  border-radius: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: start;
+  box-shadow: 0 0 5px rgba(35, 35, 35, 0.126);
+}
+
+.project-title{
+  color: rgb(237, 237, 237);
+  font-size: 26pt;
+  font-weight: bolder;
+}
+
+.project-desc{
+  color: rgb(174, 174, 174);
+  font-size: 14pt;
+}
+
+button{
+  all: unset;
+  display: block;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  box-shadow: 0 0 .5em rgba(0, 0, 0, 0.138);
+  
+}
+
+.project-button{
+  display: inline;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 1em black;
+}
+
+.button-box{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Contact{
+  min-height: 100vh;
 }
