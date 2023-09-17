@@ -25,11 +25,12 @@ body {
   /* background-image: url("/src/assets/hivebg.png");
   background-size:contain;
   background-repeat: repeat-y; */
-  background-image: radial-gradient(hsl(160, 50%, 20%), hsl(180, 10%, 17%));
+  background-color: rgb(21, 21, 21);
   font-family: maven-thin;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: rgb(228, 228, 228);
+  margin:0px;
 }
 
 
@@ -60,10 +61,15 @@ body {
   text-align: center;
 }
 
+.hero-buttonbox{
+  display: flex;
+}
+
 a{
   all: unset;
   cursor: pointer;
-  width: fit-content;
+  width: 100%;
+  height: 100%;
 }
 
 a:hover{
@@ -87,7 +93,7 @@ h2{
 }
 
 .Project{
-  background-color: rgba(45, 45, 45, 0);
+  background-color: rgb(28, 28, 28);
   color: rgb(184, 184, 184);
   margin: 1em;
   padding: 2em;
@@ -99,6 +105,12 @@ h2{
   box-shadow: 0 0 5px rgba(35, 35, 35, 0.126);
 }
 
+.projpic{
+  height: 300px;
+  width: 300px;
+  border-radius: 1em;
+}
+
 .project-title{
   color: rgb(237, 237, 237);
   font-size: 26pt;
@@ -108,6 +120,18 @@ h2{
 .project-desc{
   color: rgb(174, 174, 174);
   font-size: 14pt;
+}
+
+.projectbutton{
+  margin-top: 1rem;
+  min-width: fit-content;
+  width: 5rem;
+}
+
+.project-buttonbox{
+  display: flex;
+  width: 50%;
+  gap: 1rem;
 }
 
 button{
@@ -125,23 +149,25 @@ button{
   
 }
 
-.project-button{
-  display: inline;
-}
-
 button:hover{
   background-color: black;
   color: white;
   box-shadow: 0 0 1em black;
 }
 
-.button-box{
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-}
+
 
 .Contact{
-  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.contact-options{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  height: 5rem;
+  place-items: center;
+}
+
+.contact-option{
+ 
 }

@@ -6,7 +6,7 @@ const Hero = () => {
         <h1>Yasir Azhari</h1>
         <h2>Frontend developer</h2>
 
-        <div className='button-box'>
+        <div className='hero-buttonbox'>
         <a href='#Projects'><button>Projects</button></a>
         <a href='#Contact'><button>Contact Me</button></a>
         </div>
