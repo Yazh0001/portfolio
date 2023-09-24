@@ -12,7 +12,7 @@ const Projects = () => {
       description={"This was my final year project in university. Working in a team of 4, we built a program which identifies the pectoral muscle region in x-ray mammorgrams. I used VueJS in the development of the user application."} 
       image={mmg}
       code={"https://github.com/NitinMa2/mammography-muscle-removal"}
-      site={"#"}/>
+      site={"https://team02-fyp.herokuapp.com/"}/>
 
       <Project 
       title={"Music Player"} 
@@ -25,8 +25,8 @@ const Projects = () => {
       title={"Landing Page"} 
       description={"This was a placeholder landing page that I created as part of a previous technical interview"} 
       image={landing}
-      code={"#"}
-      site={"#"}/>
+      code={"https://github.com/Yazh0001/product-listing"}
+      site={"https://sparkling-pastelito-7aafb7.netlify.app"}/>
     </ul>
   )
 }
